@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <main>
+      <form action="" class="formulario" id="formulario">
+        <div class="formulario__titulos">
+          <h1 class="formulario__titulo">Learn to code by watching others</h1>
+          <p class="formulario__texto">
+            See how experienced developers solve problems in real-time. Watching
+            <span class="formulario__texto-span"
+              >scripted tutorials is great, but
+            </span>
+            <span class="formulario__texto-span"
+              >understanding how developers think is</span
+            >
+            <span class="formulario__texto-span">invaluable.</span>
+          </p>
+        </div>
+
+        <div class="formulario__margin">
+          <a href="#" class="formulario__span"
+            ><span>Try it free 7 days <b>then</b> </span> $20/mo. thereafter</a
+          >
+        </div>
+
+        <div class="formularios__grupo" id="grupo__nombre">
+          <label for="nombre"></label>
+          <div class="formulario__grupo-input">
+            <input
+              class="formulario__input"
+              type="text"
+              class="formulario__input"
+              name="nombre"
+              id="nombre"
+            />
+            <img src="images/icon-error.svg" class="formulario__validacion-estado" alt="" />
+          </div>
+          <p class="formulario__input-error">First Name cannot be empty</p>
+        </div>
+
+        <div class="formularios__grupo" id="grupo__apellido">
+          <label for="apellido"></label>
+          <div class="formulario__grupo-input">
+            <input
+              class="formulario__input"
+              type="text"
+              class="formulario__input"
+              name="apellido"
+              id="apellido"
+            />
+            <img src="images/icon-error.svg" class="formulario__validacion-estado" alt="" />
+          </div>
+          <p class="formulario__input-error">Last Name cannot be empty</p>
+        </div>
+
+        <div class="formularios__grupo" id="grupo__correo">
+          <label for="correo"></label>
+          <div class="formulario__grupo-input">
+            <input
+              class="formulario__input"
+              type="email"
+              class="formulario__input"
+              name="correo"
+              id="correo"
+            />
+            <img src="images/icon-error.svg" class="formulario__validacion-estado" alt="" />
+          </div>
+          <p class="formulario__input-error">Looks like this is not an email</p>
+        </div>
+
+        <div class="formularios__grupo" id="grupo__password">
+          <label for="Password"></label>
+          <div class="formulario__grupo-input">
+            <input
+            class="formulario__input"
+              type="password"
+              class="formulario__input"
+              name="Password"
+              id="Password"
+            />
+            <img src="images/icon-error.svg" class="formulario__validacion-estado" alt="" />
+          </div>
+          <p class="formulario__input-error">Password cannot be empty</p>
+
+          <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn"> <span>Claim your free trial</span> </button>
+            <p class="formulario__btn-parrafo">By clicking the button, you are agreeing to <span> <b>our</b> Terms and Services</span></p>
+          </div>
+        </div>
+
+        
+      </form>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
