@@ -16,6 +16,7 @@ body{
     background-color: var(--Red);
     font-family: 'Poppins', sans-serif;
     min-height: 150vh;
+    min-width: 360px;
 }
 /* Mobile first */
 .formulario{
@@ -50,7 +51,7 @@ body{
     position: absolute;
     top: -20px;
     left: -10px;
-    bottom: 20px;
+    bottom: 20px; 
     color: #fff;
     width: 500px;
     font-weight: 600;
@@ -61,10 +62,10 @@ body{
 .formulario__span{
     text-decoration: none;
     color:var(--Grayish-Blue);
-    position: absolute;
+     position: absolute;
     top: 5px;
-    right: 80px;
-    bottom: -25px;
+    right: 90px;
+    bottom: -25px; 
 }
 .formularios__grupo{
     width: 90%;
@@ -134,4 +135,13 @@ body{
 .formulario__btn-parrafo b{
     color: var(--Grayish-Blue);
     font-weight: 400;
+}
+
+/* Estilos para validaciones */
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+    color: #bb2929;
+    opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__input{
+    border: 1px solid #bb2929;
 }
