@@ -1,0 +1,122 @@
+:root{
+
+--Blue: hsl(223, 87%, 63%);
+ /* Secondary */
+
+--Pale-Blue: hsl(223, 100%, 88%);
+--Light-Red: hsl(354, 100%, 66%);
+/* Neutral */
+--Gray: hsl(0, 0%, 59%);
+--Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+.contenedor{
+    min-height: 120vh;
+}
+.contenedor__logo{
+    margin-top: 70px;
+    text-align: center;
+}
+.contenedor__titulo{
+    color: var(--Gray);
+    text-align: center;
+    font-weight: 300;
+    margin-top: 40px;
+}
+.contenedor__titulo span{
+    margin-top: 15px;
+}
+.contenedor__titulo b{
+    color: var(--Very-Dark-Blue);
+}
+.contenedor__titulo span{
+    display: block;
+    font-size: 14px;
+    color: #000;
+    font-weight: 300;
+}
+.contenedor__form{
+    text-align: center;
+    margin-top: 30px;
+}
+.form__input{
+    height: 45px;
+    line-height: 45px;
+    background-color: white;
+    color: hsl(223, 100%, 88%);
+    border: 3px solid hsl(223, 100%, 88%);
+    border-radius: 30px;
+    padding: 0 105px;
+}
+.form__btn{
+    height: 45px;
+    line-height: 45px;
+    background-color: var(--Blue);
+    padding: 0 50px;
+    border-radius: 30px;
+    border: none;
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+    /* box-shadow: 1px 6px 0 0 rgba(0, 0, 0, 0.2); */
+    box-shadow: 0px 0px 24px 8px rgba(97, 115, 255, 0.24);
+}
+.form__img{
+    width: 500px;
+    margin-top: 50px;
+}
+.contenedor__footer{
+    margin-top: 50px;
+    text-align: center;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.social__texto{
+    color: var(--Gray);
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.social__link{
+    padding-right: 25px;
+    color: var(--Blue);
+}
+
+@media screen and (max-width:768px){
+    .contenedor__titulo{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .contenedor__titulo span{
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .form__input{
+        width: 80%;
+    }
+    .form__btn{
+        width: 80%;
+        margin-top: 12px;
+    }
+    .form__img{
+        width: 100%;
+    }
+    .contenedor__footer{
+        margin-top: 100px;
+    }
+    .social__texto{
+        margin-top: 35px;
+    }
+}
