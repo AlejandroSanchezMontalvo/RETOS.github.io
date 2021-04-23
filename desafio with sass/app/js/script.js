@@ -14,8 +14,8 @@ btnHamburger.addEventListener('click', function(){
         })
        
     } else {
-        header.classList.add('open')
         body.classList.add('noscroll')
+        header.classList.add('open')
         fade.forEach(function(e){
             e.classList.remove('fade-out')
             e.classList.add('fade-in')

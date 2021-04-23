@@ -1,5 +1,6 @@
 .header{
-
+    position: relative;
+    z-index: 11111;
     &.open{
         .header__toggle{
             >span:first-child{
