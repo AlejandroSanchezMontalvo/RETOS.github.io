@@ -98,15 +98,18 @@ li{
 
     .header__about-textos h1{
         font-size: 24px;
+        text-align: center;
     }
     .header__about-textos{
-        text-align: center;
         width: 290px; 
         padding: 15px 28px; 
     }
+    .header__about-textos p{
+        text-align: center;
+    }
     .header__about-btn{
-         display: flex;
-        justify-content: center; 
+        display: block;
+        text-align: center;
         margin-top: 30px;
     }
     .header__about-images img{
@@ -232,7 +235,9 @@ li{
     display: flex;
     margin-top: 25px;
 }
-
+.footer__addres img{
+    margin-top: 3px;
+}
 .addres{
     margin-left: 1em;
 }
@@ -240,12 +245,18 @@ li{
     display: flex;
     margin-top: 20px;
 }
+.footer__contactos-phone img{
+    margin-top: 3px;
+}
 .phone{
     margin-left: 1em;
 }
 .footer__contactos-email{
     display: flex;
     margin-top: 20px;
+}
+.footer__contactos-email img{
+    margin-top: 3px;
 }
 .email{
     margin-left: 1em;
@@ -303,5 +314,34 @@ li{
     margin-left: 40px;
 }
 
-
+@media screen and (max-width:768px){
+    .footer{
+        overflow-x: hidden;
+    }
+    .footer__container{
+        margin-top: 70px;
+        padding-left: 0;
+    }
+    .footer-main{
+        margin-top: 0;
+    }
+    .footer__links-col1{
+        grid-column: 1;
+        margin-left: 0;
+    }
+    .footer__links-col2{
+         grid-column: 1; 
+         margin-top: 10px;
+    }
+    .footer__social{
+        grid-column: 1; 
+        padding-left: 120px;
+    }
+    .footer__copyrigth{
+        grid-column: 1; 
+        margin-top: 5px;
+        padding-left: 50px;
+        font-size: 0.625rem;
+    }
+}
 
