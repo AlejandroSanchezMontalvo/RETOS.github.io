@@ -10,6 +10,7 @@ body{
     box-sizing: border-box;
     font-family: 'Lexend Deca', sans-serif;
     background-color: var(--Very-light-gray);
+    height: 210vh;
 }
 a,a:visited{
    text-decoration: none;
@@ -21,21 +22,21 @@ figure{
     margin-top: 60px;
 }
 .box{
-    position: relative;
+    position: absolute; 
     background-color: var(--Bright-orange);
-    width: 90%;
-    height: 350px;
+    width: calc(100% - 14%);
+    height: 390px;
     transform: translateX(5%);
 }
 .box--verde{
     background-color: var(--Dark-cyan);
     position: absolute;
-    top: 410px;
-    width: 86%;
+    top: 450px;
+    width: calc(100% - 14%);
 }
 .box--verde-fuerte{
     position: absolute;
-    top: 760px;
+    top: 840px;
     background-color: var(--Very-dark-cyan);
     width: 86%;
 }
@@ -49,7 +50,7 @@ figure{
 }
 .box__textos-parrafo{
     color: var(--Transparent-white);
-    font-size: 14px;
+    font-size: 15px;
 }
 .box__btn{
     margin-top: 40px;
@@ -70,6 +71,9 @@ figure{
 }
 
 @media screen and (min-width:768px){
+    body{
+        overflow: hidden;
+    }
     .container{
         max-width: 100vw;
         display: flex;
@@ -79,6 +83,7 @@ figure{
         width: 70%;
     }
     .box{
+        position: relative;
         height: 30em;
     }
     .box--verde{
@@ -91,6 +96,10 @@ figure{
     }
     .box__textos{
         position: relative;
+    }
+    .box__textos-parrafo {
+        font-size: 17px;
+        line-height: 1.5;
     }
     .box__textos-title h2{
         font-size: 2.5rem;
