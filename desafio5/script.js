@@ -11,12 +11,15 @@ document.querySelectorAll('.accordion__question').forEach(item =>{
                     accCollapse.style.height = accHeight + 'px'
                     accCollapse.style.display = ''
                 },1)
+                
                 accCollapse.classList = 'accordion__collapse collapsing'
     
                 setTimeout(()=>{
-                    accCollapse.classList = 'accordion__collapse open'
+                    accCollapse.classList = 'accordion__collapse  open'
                 },300)
             }else{
+
+                accCollapse.classList = 'accordion__collapse collapsing'
     
                 setTimeout(()=>{
                     accCollapse.style.height = '0px'
