@@ -99,8 +99,7 @@ li{
         font-size: 24px;
         text-align: center;
     }
-    .header__about-textos{
-        width: 290px; 
+    .header__about-textos{  
         padding: 15px 28px; 
     }
     .header__about-textos p{
