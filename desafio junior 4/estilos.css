@@ -87,7 +87,6 @@ li{
         height: 20px;
     }
     .header__btn{
-    display: inline-block;
     padding: 0 0.5625rem;
     border: 2px solid white; 
     border-radius: 20px;
@@ -107,7 +106,7 @@ li{
     .header__about-textos p{
         text-align: center;
     }
-    .header__about-btn{
+    .header__about-btn{ 
         display: block;
         text-align: center;
         margin-top: 30px;
@@ -274,6 +273,7 @@ li{
     margin-left: 130px;
 }
 
+
 .footer__links-col2{
     display: flex;
     flex-direction: column;
@@ -335,12 +335,14 @@ li{
     }
     .footer__social{
         grid-column: 1; 
-        padding-left: 120px;
+        justify-content: center;
+        align-items: center ;
     }
     .footer__copyrigth{
-        grid-column: 1; 
-        margin-top: 5px;
-        padding-left: 50px;
+        grid-column: 1;
+        align-items: center;
+        margin-top: 10px;
+        padding-left: 50px ; 
         font-size: 0.625rem;
     }
 }
